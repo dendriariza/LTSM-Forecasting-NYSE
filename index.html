@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dendri Ariza – Portfolio</title>
+  <meta name="description" content="Portfolio and CV of Dendri Ariza – finance, risk management, data, and entrepreneurship." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d10; --card:#12151a; --muted:#9aa4b2; --text:#e6edf3; --brand:#4ea7ff; --accent:#7bf1a8;
+      --border: #1f232a; --shadow: 0 10px 30px rgba(0,0,0,.3)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin-inline:auto;padding:32px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--accent));box-shadow:var(--shadow)}
+    h1{font-size:clamp(28px,4vw,40px);margin:0}
+    .tagline{color:var(--muted);margin-top:4px}
+    .links{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:10px 14px;border-radius:12px;background:var(--card)}
+    .btn:hover{border-color:#2a2f39}
+    main{display:grid;grid-template-columns:1fr;gap:24px;margin-top:28px}
+    @media (min-width: 880px){ main{grid-template-columns: 1fr 280px;}}
+    section{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+    section h2{margin:0 0 14px 0;font-size:20px}
+    .pill{display:inline-block;background:#0e1116;border:1px solid var(--border);padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;color:#c6d2e1;font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{border:1px solid var(--border);background:#0e1116;border-radius:14px;padding:14px}
+    .card h3{margin:6px 0 6px;font-size:16px}
+    .muted{color:var(--muted)}
+    .right aside{position:sticky;top:16px}
+    .timeline{display:grid;gap:14px}
+    .item{display:grid;gap:4px}
+    .item .role{font-weight:700}
+    footer{opacity:.8;text-align:center;padding:28px 0;color:var(--muted)}
+    code{background:#0e1116;border:1px solid var(--border);padding:2px 6px;border-radius:6px}
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "name":"Dendri Ariza",
+      "url":"https://dendriariza.github.io/",
+      "jobTitle":"Enterprise Risk & Finance",
+      "sameAs":["https://github.com/dendriariza","https://www.linkedin.com/in/REPLACE-LINK"],
+      "knowsAbout":["risk management","finance","data science","python","ERM"]
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <h1>Dendri Ariza</h1>
+          <div class="tagline">Finance & Enterprise Risk • Data‑driven operator • Columbia University</div>
+        </div>
+      </div>
+      <nav class="links">
+        <a class="btn" href="mailto:you@email.com">Email</a>
+        <a class="btn" href="https://github.com/dendriariza">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/REPLACE-LINK">LinkedIn</a>
+        <a class="btn" href="resume.pdf" download>Download Résumé (PDF)</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="left">
+        <section aria-labelledby="about">
+          <h2 id="about">About</h2>
+          <p>Operator‑analyst with a focus on <strong>Enterprise Risk (ERM)</strong>, <strong>finance</strong>, and <strong>data products</strong>. I build decision tools (VaR/ES, Monte Carlo), translate risk into P&amp;L, and ship pragmatic systems for real businesses.</p>
+        </section>
+
+        <section aria-labelledby="experience">
+          <h2 id="experience">Experience</h2>
+          <div class="timeline">
+            <div class="item">
+              <div class="role">Co‑founder & CFO • Seacart</div>
+              <div class="muted">2023 – Present · Jakarta & NYC</div>
+              <div>Built supply‑chain risk controls, cash conversion cycle tracking, and pricing strategy for seafood distribution. Led dashboards for inventory, delivery, and CRM.</div>
+            </div>
+            <div class="item">
+              <div class="role">Mandiri Sekuritas (Intern) • Risk/Markets</div>
+              <div class="muted">2024 – 2025</div>
+              <div>Prototyped LP risk simulator with VaR/ES and scenario stress. Created liquidity analytics for quoting obligations and bond metrics (DV01, duration).</div>
+            </div>
+            <div class="item">
+              <div class="role">Columbia University • ERM (M.S.)</div>
+              <div class="muted">2024 – 2025</div>
+              <div>Coursework: Strategic Risk, Credit Analytics, Communication for Risk, Quant Methods. Project work on ERM‑to‑value translation and risk appetite design.</div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="projects">
+          <h2 id="projects">Projects</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Risk Dashboard (Python)</h3>
+              <p class="muted">Monte Carlo VaR/ES + GARCH variance • Interactive notebook</p>
+              <p><a href="https://github.com/dendriariza/REPO-1">Repo</a> · <a href="#">Demo</a></p>
+            </article>
+            <article class="card">
+              <h3>IPO Prospectus Risk Miner</h3>
+              <p class="muted">NLP extractor for Indonesian filings (BAB VI – Faktor Risiko) with classification.</p>
+              <p><a href="https://github.com/dendriariza/REPO-2">Repo</a></p>
+            </article>
+            <article class="card">
+              <h3>Restaurant P&amp;L Toolkit</h3>
+              <p class="muted">COGS tracker, loyalty logic, and delivery routing heuristics for Langgara Seafood.</p>
+              <p><a href="https://github.com/dendriariza/REPO-3">Repo</a></p>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="skills">
+          <h2 id="skills">Skills</h2>
+          <div>
+            <span class="pill">ERM • Risk Appetite • RAS</span>
+            <span class="pill">Python • Pandas • SQL</span>
+            <span class="pill">VaR/ES • Monte Carlo</span>
+            <span class="pill">Bonds • DV01 • Duration</span>
+            <span class="pill">NLP • Classification</span>
+            <span class="pill">Dashboards • Visualization</span>
+            <span class="pill">Indonesian Markets • OJK</span>
+          </div>
+        </section>
+
+        <section aria-labelledby="education">
+          <h2 id="education">Education</h2>
+          <div class="item">
+            <div class="role">M.S., Enterprise Risk Management</div>
+            <div class="muted">Columbia University (SPS), 2025</div>
+          </div>
+        </section>
+
+        <section aria-labelledby="contact">
+          <h2 id="contact">Contact</h2>
+          <p>Email: <a href="mailto:you@email.com">you@email.com</a> · LinkedIn: <a href="https://www.linkedin.com/in/REPLACE-LINK">REPLACE‑LINK</a></p>
+        </section>
+      </div>
+
+      <div class="right">
+        <aside>
+          <section>
+            <h2>Quick Facts</h2>
+            <ul>
+              <li>INTJ‑A; values honesty and rigor.</li>
+              <li>"Do well by doing good."</li>
+              <li>Enjoys building real‑world systems.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Focus Areas</h2>
+            <ul>
+              <li>Translating ERM to enterprise value</li>
+              <li>Risk‑adjusted sales & pricing</li>
+              <li>Indo capital markets & policy</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Dendri Ariza · Built with vanilla HTML/CSS · Hosted on GitHub Pages
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
