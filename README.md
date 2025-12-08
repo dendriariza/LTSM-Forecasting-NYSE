@@ -11,8 +11,8 @@ The model is trained on NYSE data from 1962–1986, standardized using training-
 ### Project Summary
 - Built a sequential model with 2 LSTM layers (32 units each).  
 - Predicts 3 outputs simultaneously.  
-*Captures nonlinear relationships between returns, volume, and volatility.
-*Demonstrates stylized financial facts:
-*Weak return predictability
-*Volume–volatility correlation
-*Strong volatility persistence
+- Captures nonlinear relationships between returns, volume, and volatility.  
+- Demonstrates stylized financial facts:  
+  - Weak return predictability  
+  - Volume–volatility correlation  
+  - Strong volatility persistence  
