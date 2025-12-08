@@ -56,7 +56,18 @@ Each input sample is a 5×3 matrix representing:
   - The best-performing model is stored as bestmodel.keras, which preserves the architecture and learned weights.  
 
 ### Results & Quantitative Insights
+<img width="508" height="655" alt="image" src="https://github.com/user-attachments/assets/257e0b83-e457-479c-ba89-d2d43b9eba0f" />
 
-<img width="990" height="381" alt="image" src="https://github.com/user-attachments/assets/d8da78c1-2c9b-40b0-9b30-34c44edb08b5" />
-<img width="1003" height="772" alt="image" src="https://github.com/user-attachments/assets/628e1beb-68ca-405b-a415-349f6fde708c" />
+The model shows realistic performance for financial time series:  
+- Returns (R² = 0.063)
+Daily returns are highly noisy and close to random. The model captures only weak structure, which is expected in real markets and confirms it is not overfitting.  
+- Log Volume (R² = 0.578)
+Volume exhibits strong autocorrelation and behavioral persistence. The LSTM learns these patterns well, accurately tracking liquidity cycles with only occasional misses during news-driven spikes.  
+- Log Volatility (R² = 0.967)
+Volatility is highly predictable due to clustering. The model captures regime shifts, calm vs. high-vol periods, and long-memory behavior almost perfectly.  
+- Key Interpretations
+The model effectively learns nonlinear market dynamics, especially volatility persistence and volume–volatility relationships.
+Joint forecasting improves performance by letting the LSTM use shared structure across variables.
+Prediction behavior aligns with empirical finance: volatility is predictable, returns are not.
+
 
