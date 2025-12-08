@@ -41,7 +41,9 @@ The input features are standardized using only the training set to avoid look-ah
 - Sequence Windowing  
 Each input sample is a 5×3 matrix representing:  
 5 days × (return, log volume, log volatility)  
-- LSTM Architecture  
+- LSTM Architecture
+<img width="652" height="242" alt="image" src="https://github.com/user-attachments/assets/f984e355-4124-4ab8-96a2-6bba5beba778" />
+
   - The first LSTM layer learns short-term temporal dependencies.  
   - The second LSTM encodes a compressed representation of market dynamics.  
   - The Dense layer produces three simultaneous predictions.
@@ -52,3 +54,9 @@ Each input sample is a 5×3 matrix representing:
   - 100-epoch training ensures convergence without overfitting.  
 - Model Saving  
   - The best-performing model is stored as bestmodel.keras, which preserves the architecture and learned weights.  
+
+### Results & Quantitative Insights
+
+<img width="990" height="381" alt="image" src="https://github.com/user-attachments/assets/d8da78c1-2c9b-40b0-9b30-34c44edb08b5" />
+<img width="1003" height="772" alt="image" src="https://github.com/user-attachments/assets/628e1beb-68ca-405b-a415-349f6fde708c" />
+
